@@ -14,7 +14,9 @@ export const ChipsInput = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (value.trim() === "") return;
-    setTags([value, ...tags]);
+    const v = value.trim();
+    if (!v) return;
+    setTags((prev) => (prev?.includes(v) ? prev : [v, ...(prev || [])]));
     setValue("");
   };
   const handleRemove = (tag: string) => {
