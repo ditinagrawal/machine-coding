@@ -3,3 +3,5 @@
 Day 1 - Chips Input
 
 Day 2 - Tooltip
+
+Day 3 - Color Explorer
