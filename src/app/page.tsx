@@ -1,4 +1,5 @@
 import { ChipsInput } from "@/components/chips-input";
+import { ColorExplorer } from "@/components/color-explorer";
 import { Tooltip } from "@/components/tooltip";
 import { Separator } from "@/components/ui/separator";
 
@@ -8,6 +9,7 @@ const Home = () => {
       <ChipsInput />
       <Separator />
       <Tooltip />
+      <ColorExplorer />
     </div>
   );
 };
