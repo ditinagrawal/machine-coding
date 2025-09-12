@@ -1,3 +1,4 @@
+import { AgeCalculator } from "@/components/age-calculator";
 import { ChipsInput } from "@/components/chips-input";
 import { ColorExplorer } from "@/components/color-explorer";
 import { Tooltip } from "@/components/tooltip";
@@ -9,7 +10,10 @@ const Home = () => {
       <ChipsInput />
       <Separator />
       <Tooltip />
+      <Separator />
       <ColorExplorer />
+      <Separator />
+      <AgeCalculator />
     </div>
   );
 };
